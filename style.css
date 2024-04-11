@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color1: #46e5b9;
+    --color2: #424265;
+    --color3: #222;
+    --color4: #ebfffc;
+    --color5: #c1c1c1;
+}
+
+body{
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    height: 100vh;
+    background-color: var(--color3);
+    margin-top: 100px;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 470px;
+    background-image: linear-gradient(135deg, var(--color1), var(--color2));
+    color: white;
+    border-radius: 20px;
+    padding: 40px 35px;
+}
+
+.search{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input#input_city{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    color: grey;
+    background-color: var(--color4);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-right: 15px;
+    height: 45px;
+    font-size: 18px;
+}
+
+button#search_buttom{
+    width: 60px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    background-color: var(--color4);
+    border-radius: 50%;
+}
+
+img#search_image{
+    width: 40px;
+}
+h1, p{
+    margin: 0px;
+}
+
+h1#temperature_tittle{
+    font-size: 70px;
+}
+
+p#name_city{
+    font-size: 30px;
+}
+
+div#information_city{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--color5);
+    margin: 20px
+    
+}
+
+.img_info{
+    margin: 10px;
+}
+
+img#humidity_image{
+    margin-top: 20px;
+}
+
+.p_info{
+    font-size: 20px;
+}
+
+p#humidity_percent{
+    margin-bottom: 2px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/clear.png" type="image/x-icon">
+    <script src="index.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="search">
+                <input type="text" name="city" placeholder="enter city name" id="input_city">
+                <button type="button" id="search_buttom" onclick="weatherInfo()">
+                    <img src="imagens/loupe.png" alt="Ícone de lupa" id="search_image">
+                </button>
+            </div>
+            <div id="image">
+                <img src="imagens/clear.png" alt="weather-image" id="weather-icon">
+            </div>
+            <div id="climate_city">
+                <h1 id="temperature_tittle">- ºC</h1>
+                <p id="name_city">City Name</p>
+            </div>
+            <div id="information_city">
+                <div class="humidity">
+                    <img src="imagens/humidity.png" alt="humidity_image" class="img_info" id="humidity_image">
+                    <p class="p_info" id="humidity_percent">--</p>
+                    <p class="p_info">Humidity</p>
+                </div>
+                <div class="wind">
+                    <img src="imagens/wind.png" alt="wind_speed_image" class="img_info">
+                    <p class="p_info" id="wind_speed">--</p>
+                    <p class="p_info">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
